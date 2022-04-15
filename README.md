@@ -431,6 +431,18 @@ vector<T> c(n, x);        // c[0]..c[n-1] init to x
 T d[10]; vector<T> e(d, d+10);      // e is initialized from d
 ```
 
+## `stack` (stack with built in memory allocation)
+
+```cpp
+#include <stack>         // Include stack (std namespace)
+stack<int> a;            // Initialize stack
+a.empty();               // returns true if empty else false
+a.pop();                 // removes top element;
+a.push(3);               // pushes elemnt into stack
+a.size();                // size/number of elements in stack a
+a.top();                 // returns the top element of the stack
+```
+
 ## `deque` (Array stack queue)
 
 `deque<T>` is like `vector<T>`, but also supports:
