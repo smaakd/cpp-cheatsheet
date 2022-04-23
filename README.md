@@ -443,6 +443,20 @@ a.size();                // size/number of elements in stack a
 a.top();                 // returns the top element of the stack
 ```
 
+## `priority_queue` (stack with built in memory allocation)
+
+```cpp
+#include <queue>         // Include priority_queue (std namespace)
+priority_queue<int> a;   // Initialize max priority_queue of type int
+priority_queue<T,vector<T>,comparision_func> a;  // general syntax
+priority_queue<int,vector<int>,greater<int>> a;  // Initialize min priority_queue of type int
+a.empty();               // returns true if empty else false
+a.pop();                 // removes top element;
+a.push(3);               // pushes elemnt into stack
+a.size();                // size/number of elements in stack a
+a.top();                 // returns the top element of the stack
+```
+
 ## `deque` (Array stack queue)
 
 `deque<T>` is like `vector<T>`, but also supports:
